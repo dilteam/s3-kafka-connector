@@ -8,6 +8,7 @@ import org.apache.kafka.connect.cli.ConnectStandalone
   */
 object Driver extends Logging {
   def main(args: Array[String]): Unit = {
+    log.info("Starting S3 Kafka Connector....")
     ConnectStandalone.main(args)
   }
 }

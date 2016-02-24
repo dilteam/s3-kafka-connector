@@ -31,6 +31,7 @@ class S3Writer (s3Client: AmazonS3Client, context: SinkTaskContext, connectorCon
 
         // TODO: Allow users to add application specific metadata for the file. Currently set to 'null'.
         s3Client.putObject(buckName, key, new ByteInputStream(r.value.toString.getBytes, r.value.toString.length), null)
+        log.info(String.format("Message was written to bucket: %s with key: %s", buckName, key))
       } catch {
         case e:Exception => { log.error("exception in insert: " + e.getMessage); return false}
       }
