@@ -11,6 +11,8 @@ object S3SinkConfig {
   val BUCKET_NAME = "BUCKET_NAME"
   val FOLDER_NAME = "FOLDER_NAME"
 
+  // More AWS configarion parameters will be added later.
+
   val config: ConfigDef = new ConfigDef()
     .define(ACCESS_KEY, Type.STRING, "ACCESS_KEY", Importance.HIGH, "ACCESS_KEY")
     .define(SECRET_KEY, Type.STRING, "SECRET_KEY", Importance.HIGH, "SECRET_KEY")
