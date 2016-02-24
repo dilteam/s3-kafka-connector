@@ -55,17 +55,22 @@ vi src/main/resources/connect-s3-sink.properties
 Set these properties:
 
 ACCESS_KEY=<add access key here...>
+
 SECRET_KEY=<add secret key here...>
+
 BUCKET_NAME=<add bucket name here...>
+
 FOLDER_NAME=<add folder name here...>
 
 
 9) Compile. (You should have Maven installed.)
+
 mvn clean package
 
 
 10) Start S3 Kafka Conector.
 bin/startConnector.sh
+
 
 
 11) Now enter messages in the Producer window. They will show up on S3 at s3://<BUCKET_NAME>/<FOLDER_NAME>/
@@ -74,7 +79,11 @@ bin/startConnector.sh
 TODO:
 
 1) Allow users to partition data as per their need.
+
 2) Test performance. (Would we get SlowDown errors (503) errors?)
+
 3) Add more S3 configuration parameters.
+
 4) and more....
+
 
