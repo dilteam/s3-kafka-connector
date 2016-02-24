@@ -45,6 +45,7 @@ bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic test --from-beg
 7) Get the source code for this project in a new Terminal window.
 
 git clone https://github.com/dilteam/s3-kafka-connector
+
 cd s3-kafka-connector
 
 
@@ -69,11 +70,12 @@ mvn clean package
 
 
 10) Start S3 Kafka Conector.
+
 bin/startConnector.sh
 
 
 
-11) Now enter messages in the Producer window. They will show up on S3 at s3://<BUCKET_NAME>/<FOLDER_NAME>/
+11) Now enter messages in the Producer window. They will show up on S3 at s3://BUCKET_NAME/FOLDER_NAME/
 
 
 TODO:
