@@ -33,7 +33,9 @@ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 -
 5) In the same terminal window, start Producer & send a few messages
 
 bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
+
 This is a message<ENTER>
+
 This is another message<ENTER>
 
 
